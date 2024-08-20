@@ -1,0 +1,181 @@
+.nav{
+    background-color: rgb(201, 178, 197);
+    display: flex;
+    justify-content: space-between;   
+}
+.logo{  
+    background-color: rgb(201, 178, 197);
+    border: 3px solid rgb(201, 178, 197);;
+    height: 4rem;
+}
+
+.ham{
+    margin-right: 20px;
+    margin-top: 10px;
+   
+   }
+
+   .menu{
+    display: none;
+   }
+.hamimg{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width:1076px){
+
+    .ham{
+        display: none;
+    }
+    .menu{
+        display: flex;
+      
+    }
+    .menu li{
+        list-style: none;
+        padding: 20px;
+        padding-right: 70px;
+        font-size: larger;
+        cursor: pointer;
+    }
+    .menu li :hover{
+      color: aliceblue;
+    }
+    .menu li a{
+      text-decoration: none;
+    }
+    .navlink{
+      color: var(--whiteColor);
+      padding: 0.45rem;
+      font-size: .9rem;
+      font-weight: 400;
+      &:hover{
+          color:var(--PrimaryColor);
+      }
+  }
+    .car .im{
+        width: 700px;
+        height:500px ;
+    }
+    /* .slidimg{
+       margin-left: 00px;
+    } */
+
+}
+@media screen and (max-width:1076px){
+    .slidimg{
+        width: 350px;
+        height: 250px;
+    }
+    @media screen and (max-width:776px){
+        .slidimg{
+            width: 180px;
+            height: 180px;
+        }
+       
+
+    }
+
+    
+
+}
+
+.car{
+    width: 100%;
+   
+    padding: 0 40px;
+}
+.sli{
+    padding-right: 60px;
+    padding-top: 60px;
+}
+
+.carousel-item {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  
+  .carousel-item-next,
+  .carousel-item-prev {
+    opacity: 1;
+    transform: rotateY(90deg);
+  }
+
+  .backside{
+    background-color: black;
+
+  }
+  /* .container{
+    display: flex;
+    background-color: rgb(246, 209, 244);
+    position: relative;
+  } */
+
+  
+/* Style for the Container Component */
+.containe {
+    display: flex;
+    flex-direction: row; /* Side-by-side on larger screens */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(243, 201, 236);
+
+  }
+  
+  .ca {
+    flex: 1;
+    margin-top: 60px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(42, 41, 41);
+    color:rgb(201, 178, 197);
+    /* Additional styles for content card */
+  }
+  .ca h1{
+    color: rgb(76, 197, 142);
+  }
+
+  .std{
+   display: none;
+  }
+  
+  .slider-comp {
+    flex: 1;
+    /* Additional styles for the slider */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack vertically on mobile */
+    }
+  
+    .ca, .slider-comp {
+      width: 100%;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+  }
+  
+  /* Carousel Styling */
+  .car {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slidimg {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+  

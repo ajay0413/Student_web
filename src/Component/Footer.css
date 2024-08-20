@@ -1,0 +1,32 @@
+.icons{
+    display: flex;
+    gap: 12px;
+   
+}
+.icon1{
+    font-size: 35px;
+ 
+    top: 100px;
+  
+}
+.main{
+    background-color: rgb(216, 208, 208);
+    color: rgb(0, 0, 0);
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+
+.las{
+    display: flex;
+    flex-direction: column;
+}
